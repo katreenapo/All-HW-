@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "HomeWorks"
+  "defaultProject": "HomeWorks",
+  "cli": {
+    "analytics": "68708bde-b729-4133-bfd3-2c08810e88e8"
+  }
 }
