@@ -5,7 +5,10 @@
   - стилізувати на власний погляд
   </h3>
 <div *ngFor="let todo of todos">
-  <p>{{todo.name}}</p>
+ <ul>Task number:{{todo.id}}
+   <li><p>{{todo.name}}</p>
   <p [ngClass]="{'done': todo.isDone}">{{todo.isDone}}</p>
+</li>
+</ul> 
 </div>
   <button (click)="addTask()">click</button>
