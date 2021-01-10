@@ -1,9 +1,11 @@
+
 <h2>Завдання Angular Вступ</h2>
 <h3>Реалізувати todo list
   - виводити існуючі завдання
   - стилізувати на власний погляд
   </h3>
-
+<div *ngFor="let todo of todos">
   <p>{{todo.name}}</p>
-  <p>{{todo.isDone}}</p>
+  <p [ngClass]="{'done': todo.isDone}">{{todo.isDone}}</p>
+</div>
   <button (click)="addTask()">click</button>

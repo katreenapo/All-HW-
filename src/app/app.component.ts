@@ -7,14 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HomeWorks';
- todo = [{
+  todos = [{
     name: 'Task 1',
     isDone: true,
       }]
     
       addTask() {
-        this.todo.push({
+        this.todos.push({
         name: 'Task 2',
-        isDone: true,})
+        isDone: false,},
+        {
+          name: 'Task 3',
+          isDone: true,})
       }
 }
