@@ -12,9 +12,9 @@ export class AppComponent {
     isDone: true,
       }]
     
-      // addTask() {
-      //   this.todo.push({
-      //   name: 'Task 2',
-      //   isDone: true,})
-      // }
+      addTask() {
+        this.todo.push({
+        name: 'Task 2',
+        isDone: true,})
+      }
 }
